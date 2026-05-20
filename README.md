@@ -50,7 +50,7 @@ The page auto-signs-up `alice+<timestamp>@test.com` and shows:
 3. A "Trigger session rotation" button that calls `changePassword({ revokeOtherSessions: true })`.
 4. An event log of state transitions.
 
-In both vanilla and patched builds, clicking the button briefly flickers the Convex query to `UNAUTHED (stale JWT)` before recovery:
+In both vanilla and patched builds, clicking the button briefly flickers the Convex query to `UNAUTHED (stale JWT)` for ~500-1500 ms before recovery:
 
 ```
 … · Convex query: UNAUTHED (stale JWT)
